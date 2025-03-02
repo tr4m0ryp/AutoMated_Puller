@@ -30,8 +30,6 @@ async function wallet_generator() {
         const keyPair = solanaWeb3.Keypair.generate();
         const publicKey = keyPair.publicKey.toString();
         const secretKeyBase58 = bs58.encode(keyPair.secretKey);
-        //console.log("Public Key:", publicKey);
-        //console.log("Secret Key:", secretKeyBase58);
         return { publicKey, secretKeyBase58 };
     } catch (error) {
         console.log(error);
@@ -59,11 +57,16 @@ async function main_0() {
         const fileName = `privatekeys.${timestamp}.txt`;
         fs.writeFileSync(fileName, content, 'utf8');
         console.log(`Keys opgeslagen in: ${fileName}`);
+        return fileName;
     } catch (error) {
         console.log(error);
     }
 }
 
-main_0();
+// Verwijder de directe aanroep van main_0
+// main_0(); // Deze regel is verwijderd
 
-module.exports = wallet_amounts;
+module.exports = {
+    wallet_amounts,
+    main_0
+};
