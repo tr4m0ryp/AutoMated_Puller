@@ -14,7 +14,7 @@ async function checkBalance(walletAddress) {
 }
 
 async function main() {
-    const walletAddress = '47Mq7G9QZHU9S2uHJxcUgkG8KCw9jFcqcZ3QFYHVK45P';
+    const walletAddress = '5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1';
     try {
         const balance = await checkBalance(walletAddress);
         return balance;

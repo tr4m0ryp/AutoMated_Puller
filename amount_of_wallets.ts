@@ -1,5 +1,5 @@
 const main = require('./walletbalance.ts'); 
-const wallet_liquid_amount = 0.02;
+const wallet_liquid_amount = 2.0;
 const solanaWeb3 = require("@solana/web3.js");
 const bs58 = require('bs58');
 const fs = require('fs');
