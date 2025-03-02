@@ -65,3 +65,5 @@ async function main_0() {
 }
 
 main_0();
+
+module.exports = wallet_amounts;

@@ -6,7 +6,7 @@ async function checkBalance(walletAddress) {
         const publicKey = new PublicKey(walletAddress);
         const balance = await connection.getBalance(publicKey);
         const solBalance = balance / 1000000000; 
-        return solBalance;
+        return solBalance; //test
     } catch (error) {
         console.error(`Error checking balance: ${error}`);
         throw error; 
