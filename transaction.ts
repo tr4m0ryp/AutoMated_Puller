@@ -1,14 +1,12 @@
-//transaction maker
-const main = require('./walletbalance.ts'); 
-//const wallet_amouts = require('./amount_of_wallets.ts');
+const main = require('./walletbalance.js');
 
-
-async function amount_to_be_sent(){
-    try{
+async function amount_to_be_sent() {
+    try {
         const Wallet_Balance = await main();
-        //const Wallet_Amounts = wallet_amouts();
-        console.log(Wallet_Balance);
-    }catch(error){
-        console.log(`You are facing the error ${error}`);
+        console.log(`Wallet Balance: ${Wallet_Balance} SOL`);
+    } catch (error) {
+        console.error(`You are facing the error: ${error}`);
     }
 }
+
+amount_to_be_sent();
