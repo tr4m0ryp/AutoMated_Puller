@@ -30,8 +30,8 @@ async function wallet_generator() {
         const keyPair = solanaWeb3.Keypair.generate();
         const publicKey = keyPair.publicKey.toString();
         const secretKeyBase58 = bs58.encode(keyPair.secretKey);
-        console.log("Public Key:", publicKey);
-        console.log("Secret Key:", secretKeyBase58);
+        //console.log("Public Key:", publicKey);
+        //console.log("Secret Key:", secretKeyBase58);
         return { publicKey, secretKeyBase58 };
     } catch (error) {
         console.log(error);
