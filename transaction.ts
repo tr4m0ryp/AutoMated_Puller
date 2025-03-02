@@ -19,7 +19,6 @@ async function amount_to_be_sent() {
     }
 }
 
-
 async function transaction() {
     const connection = new web3.Connection(web3.clusterApiUrl('devnet'), 'confirmed');
 
@@ -55,6 +54,4 @@ async function transaction() {
     }
 }
 
-// Voer de transactie uit
 transaction();
-//etes
