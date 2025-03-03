@@ -1,5 +1,9 @@
 {
   "dependencies": {
-    "@solana/web3.js": "^1.98.0"
+    "@metaplex-foundation/mpl-token-metadata": "^3.4.0",
+    "@metaplex-foundation/umi-bundle-defaults": "^1.1.1",
+    "@solana/spl-token": "^0.4.12",
+    "@solana/web3.js": "^1.98.0",
+    "nft.storage": "^7.2.0"
   }
 }

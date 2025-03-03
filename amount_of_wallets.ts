@@ -63,9 +63,6 @@ async function main_0() {
     }
 }
 
-// Verwijder de directe aanroep van main_0
-// main_0(); // Deze regel is verwijderd
-
 module.exports = {
     wallet_amounts,
     main_0
