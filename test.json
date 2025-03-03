@@ -1,0 +1,33 @@
+{
+  "name": "TRAM0RYP Utility Token",
+  "symbol": "TRAM",
+  "description": "Utility token voor het TRAM0RYP ecosysteem",
+  "image": "https://tr4m0ryp.com/tokens/tram-logo.png",
+  "external_url": "https://tr4m0ryp.com/tram-token",
+  "decimals": 9,
+  "attributes": [
+    {
+      "trait_type": "Utility",
+      "value": "Governance"
+    },
+    {
+      "trait_type": "Supply",
+      "value": "1.000.000.000"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "https://tr4m0ryp.com/tokens/tram-logo.png",
+        "type": "image/png"
+      }
+    ],
+    "category": "token",
+    "creators": [
+      {
+        "address": "TR4m0ryp...WalletAddress...",
+        "share": 100
+      }
+    ]
+  }
+}
